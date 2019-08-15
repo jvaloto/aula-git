@@ -1,3 +1,5 @@
+> Projeto para aprendizado de comandos do Git integrando com o GitHub
+
 Precisa baixar e instalar o [git](https://git-scm.com/downloads)
 
 #### Config
