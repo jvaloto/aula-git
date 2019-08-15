@@ -1,5 +1,6 @@
 Precisa baixar e instalar o [git](https://git-scm.com/downloads)
 
+##### Config
 ```
 # configurar nome do usuário
 $ git config --global user.name "User Name"
@@ -10,16 +11,20 @@ $ git config --global user.name "User Name"
 $ git config --global user.email "email@test.com"
 ```
 
+##### Inicializar um repositório
 ```
 # inicializar um repositório
 $ git init
 ```
 
+
+##### Exibir o estado atual dos arquivos
 ```
 # exibir o repositório neste momento
 $ git status
 ```
 
+##### Commit
 ```
 # adicionar arquivos no commit
 $ git add nome_arquivo
@@ -30,6 +35,8 @@ $ git add nome_arquivo
 $ git commit -m "mensagem do commit"
 ```
 
+
+##### Log
 ```
 # exibe os commits realizados
 $ git log
@@ -65,6 +72,8 @@ $ git log --graph
 $ git show hash_log
 ```
 
+
+##### Diff
 ```
 # exibir as diferenças entre os arquivos antes de realizar o commit
 $ git diff
