@@ -1,14 +1,15 @@
-Precisa baixar e instalar o g[it] (https://git-scm.com/downloads)
+Precisa baixar e instalar o [git](https://git-scm.com/downloads)
 
 
-> Configurar nome do usuário
+
 ```
+// configurar nome do usuário
 $ git config --global user.name "User Name"
 ```
 
 
-> Configurar email do usuário
 ```
+// configurar email do usuário
 $ git config --global user.email "email@test.com"
 ```
 
