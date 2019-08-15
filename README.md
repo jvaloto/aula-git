@@ -1,6 +1,6 @@
 > Projeto para aprendizado de comandos do Git integrando com o GitHub
 
-Precisa baixar e instalar o [git](https://git-scm.com/downloads)
+:paperclip: Precisa baixar e instalar o [git](https://git-scm.com/downloads)
 
 #### Config
 ```
@@ -85,3 +85,62 @@ $ git diff
 # exibe apenas os nomes dos arquivos que possuem diferença
 $ git diff --name-only
 ```
+
+#### Checkout
+```
+# checkout do arquivo conforme versão no git
+$ git checkout nome_arquivo
+```
+
+
+#### Reset
+
+Voltar históricos que não precisam ser mais comitados. Utilizar quando ainda o commit não foi para o servidor
+
+```
+# retorna o commit da hash e já adiciona no commit
+$ git reset --soft hash
+```
+
+```
+# retorna o commit mas sem adicionar no commit novamente
+$git reset --mixed hash
+```
+
+```
+# retorna o arquivo conforme o histórico do hash
+$ git reset --hard hash
+```
+
+#### Adicionar um repositório remoto
+```
+# adiciona 
+$ git remote add origin ssh/https
+```
+
+```
+# define pela primeira vez para onde vai e de onde vem
+$ git push -u origin master
+```
+
+#### Clonar um repositório
+```
+# parametro opcional de nome diferente do que esta no git
+$ git clone ssh/https [novo-nome]
+```
+
+
+#### Fork
+
+Você pode copiar o repositório para a sua conta, realizar as alterações e depois enviar um pull request para o respoitório original.
+
+Se for utilizar git clone, ele apenas serve para quando o projeto for seu, assim você pode enviar os commits diretos para seu repositório.
+
+Clicar no projeto desejado e clicar em "Fork"
+
+#### Branch
+
+- Modificar os arquivos sem alterar o branch maser (principal) sem as alterações
+- Gerenciamento de forma fácil (criar/apagar)
+- Multiplas pessoas trabalhando em várias branchs diferentes
+- Evita conflitos, os commits são realizados apenas no final
