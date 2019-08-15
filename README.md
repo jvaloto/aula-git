@@ -64,3 +64,13 @@ $ git log --graph
 # exibe os componentes do commit
 $ git show hash_log
 ```
+
+```
+# exibir as diferenças entre os arquivos antes de realizar o commit
+$ git diff
+```
+
+```
+# exibe apenas os nomes dos arquivos que possuem diferença
+$ git diff --name-only
+```
