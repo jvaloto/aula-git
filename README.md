@@ -157,20 +157,21 @@ $ git checkout -b nome_branch
 
 ```
 # entrar na branch
-$ git checkout **nome_branch**
+$ git checkout nome_branch
 ```
 
 ```
 # excluir uma branch
-$ git branch -D **nome_branch**
+$ git branch -D nome_branch
 ```
 
 #### Merge e Rebase
-- Merge: precisa de um commit extra para organizar as bases, tem o histórico de todos os commits já feitos
-- Rebase: ele organiza os commits em linha, não possui o histórico dos commits entre as branches
+- Merge: precisa de um commit extra para organizar as bases, tem o histórico de todos os commits já feitos (mais utilizado para pull requests)
+- Rebase: ele organiza os commits em linha, não possui o histórico dos commits entre as branches (tentar utilizar sempre que possível)
 
 ```
 # fazer merge entre as branchs
 # deve estar na branch que irá receber o merge
-$ git merge **nome_branch**
+$ git merge nome_branch
 ```
+
