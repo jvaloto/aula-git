@@ -238,5 +238,11 @@ $ git push origin master --tags
 $ git tag
 ```
 
+#### Revert
 
----- teste revert
+Utilizado quando é necessário voltar um commit sem perde o histórico do que já tinha sido comitado, diferente do **git reset** 
+
+```
+# revertendo a partir de um log
+$ git revert hash_log
+```
