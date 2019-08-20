@@ -2,7 +2,7 @@
 
 :paperclip: Precisa baixar e instalar o [git](https://git-scm.com/downloads)
 
-#### Configuração do usuário
+# Configuração do usuário
 ```
 # configurar nome do usuário
 $ git config --global user.name "User Name"
@@ -13,20 +13,20 @@ $ git config --global user.name "User Name"
 $ git config --global user.email "email@test.com"
 ```
 
-#### Inicializar um repositório
+# Inicializar um repositório
 ```
 # inicializar um repositório
 $ git init
 ```
 
 
-#### Exibir o estado atual dos arquivos
+# Exibir o estado atual dos arquivos
 ```
 # exibir o repositório neste momento
 $ git status
 ```
 
-#### Commit
+# Commit
 ```
 # adicionar arquivos no commit
 $ git add nome_arquivo
@@ -38,7 +38,7 @@ $ git commit -m "mensagem do commit"
 ```
 
 
-#### Log
+# Log
 ```
 # exibe os commits realizados
 $ git log
@@ -75,7 +75,7 @@ $ git show hash_log
 ```
 
 
-#### Diff
+# Diff
 ```
 # exibir as diferenças entre os arquivos antes de realizar o commit
 $ git diff
@@ -86,14 +86,14 @@ $ git diff
 $ git diff --name-only
 ```
 
-#### Checkout
+# Checkout
 ```
 # checkout do arquivo conforme versão no git
 $ git checkout nome_arquivo
 ```
 
 
-#### Reset
+# Reset
 
 Voltar históricos que não precisam ser mais comitados. Utilizar quando ainda o commit não foi para o servidor
 
@@ -112,7 +112,7 @@ $git reset --mixed hash
 $ git reset --hard hash
 ```
 
-#### Adicionar um repositório remoto
+# Adicionar um repositório remoto
 ```
 # adiciona 
 $ git remote add origin ssh/https
@@ -123,14 +123,14 @@ $ git remote add origin ssh/https
 $ git push -u origin master
 ```
 
-#### Clonar um repositório
+# Clonar um repositório
 ```
 # parametro opcional de nome diferente do que esta no git
 $ git clone ssh/https [novo-nome]
 ```
 
 
-#### Fork
+# Fork
 
 Você pode copiar o repositório para a sua conta, realizar as alterações e depois enviar um pull request para o respoitório original.
 
@@ -138,7 +138,7 @@ Se for utilizar git clone, ele apenas serve para quando o projeto for seu, assim
 
 Clicar no projeto desejado e clicar em "Fork"
 
-#### Branch
+# Branch
 
 - Modificar os arquivos sem alterar o branch maser (principal) sem as alterações
 - Gerenciamento de forma fácil (criar/apagar)
@@ -165,7 +165,12 @@ $ git checkout nome_branch
 $ git branch -D nome_branch
 ```
 
-#### Merge e Rebase
+```
+# apagar uma branch no github
+$ git push origin :nome_branch
+```
+
+# Merge e Rebase
 - Merge: precisa de um commit extra para organizar as bases, tem o histórico de todos os commits já feitos (mais utilizado para pull requests)
 - Rebase: ele organiza os commits em linha, não possui o histórico dos commits entre as branches (tentar utilizar sempre que possível)
 
@@ -175,7 +180,7 @@ $ git branch -D nome_branch
 $ git merge nome_branch
 ```
 
-#### Git ignore
+# Git ignore
 
 Utilizado para definir quais arquivos NÃO serão enviados para o servidor.
 
@@ -186,7 +191,7 @@ Criar um arquivo chamado **.gitignore**
 - arquivo.json
 - *.json
 
-#### Git stash
+# Git stash
 
 Utilizado para "guardar" o state atual das modificações sem comitar, fica em status de WIP "Work In Progress"
 
@@ -210,7 +215,7 @@ $ git stash list
 $ git stash clear
 ```
 
-#### Alias
+# Alias
 
 Utilizado para não precisar digitar o comando inteiro todas as vezes, por exemplo, utilizar "git s" para "git status"
 
@@ -219,7 +224,7 @@ Utilizado para não precisar digitar o comando inteiro todas as vezes, por exemp
 $ git config --global alias.palavra_chave comando_executar
 ```
 
-#### Tags
+# Tags
 
 Deixar marcado versões estáveis, é possível baixar o source completo pela tag
 
@@ -238,7 +243,17 @@ $ git push origin master --tags
 $ git tag
 ```
 
-#### Revert
+```
+# apagar uma tag local
+$ git tag -d nome_tag
+```
+
+```
+# apagar uma tag no github
+$ git push origin :nome_tag
+```
+
+# Revert
 
 Utilizado quando é necessário voltar um commit sem perde o histórico do que já tinha sido comitado, diferente do **git reset** 
 
