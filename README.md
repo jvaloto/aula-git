@@ -2,7 +2,7 @@
 
 :paperclip: Precisa baixar e instalar o [git](https://git-scm.com/downloads)
 
-#### Config
+#### Configuração do usuário
 ```
 # configurar nome do usuário
 $ git config --global user.name "User Name"
@@ -175,3 +175,68 @@ $ git branch -D nome_branch
 $ git merge nome_branch
 ```
 
+#### Git ignore
+
+Utilizado para definir quais arquivos NÃO serão enviados para o servidor.
+
+Criar um arquivo chamado **.gitignore**
+
+É possível definir quais os arquivos ou utilizar suas extenções:
+
+- arquivo.json
+- *.json
+
+#### Git stash
+
+Utilizado para "guardar" o state atual das modificações sem comitar, fica em status de WIP "Work In Progress"
+
+```
+# cria um estado atual
+$ git stash
+```
+
+```
+# retorna o estado anterior
+$ git stash apply
+```
+
+```
+# lista todos os stash
+$ git stash list
+```
+
+```
+# limpa a lista de stash
+$ git stash clear
+```
+
+#### Alias
+
+Utilizado para não precisar digitar o comando inteiro todas as vezes, por exemplo, utilizar "git s" para "git status"
+
+```
+# configrar um alias
+$ git config --global alias.palavra_chave comando_executar
+```
+
+#### Tags
+
+Deixar marcado versões estáveis, é possível baixar o source completo pela tag
+
+```
+# cria uma tag com mensagem
+$ git tag -a 1.0.0 -m "Mensagem da tag"
+```
+
+```
+# commit nas tags
+$ git push origin master --tags
+```
+
+```
+# listar todas as tags
+$ git tag
+```
+
+
+---- teste revert
