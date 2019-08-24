@@ -261,3 +261,32 @@ Utilizado quando é necessário voltar um commit sem perde o histórico do que j
 # revertendo a partir de um log
 $ git revert hash_log
 ```
+
+# Issues
+
+Utilizado para controlar bugs e tarefas no repositório.
+
+Se o repositório for público é possível que qualquer usuário crie e comente as issues.
+
+É possível fechar as issues com o comentário.
+
+```
+# fechando uma issue com um commit
+$ git commit -m "Fechando a issue Closes #numero_issue"
+```
+
+# Pull Request
+
+Solicitação de união de seus commits no projeto.
+
+As branches serão unidas se o proprietário do projeto aceitar o seu pull request.
+
+É criada uma branch de pull request e somente depois é adicionada a master.
+
+```
+# criando uma branch a partir de um pull request
+$ git fetch origin pull/numero_issue/head:nome_nova_branch
+```
+
+?? precisa clicar no github para aceitar um pull request???
+
