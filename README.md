@@ -27,6 +27,13 @@ $ git status
 ```
 
 # Commit
+
+Commit é o envio dos arquivos alterados para o repositório local.
+
+Os commits devem possuir uma mensagem específicando o que foi realizado.
+
+Os commits devem ser separados de acordo com o que foi alterado, evitar de colocar tudo em um único commit
+
 ```
 # adicionar arquivos no commit
 $ git add nome_arquivo
@@ -92,6 +99,14 @@ $ git diff --name-only
 $ git checkout nome_arquivo
 ```
 
+# Pull
+
+Baixa a última versão do repositório
+
+```
+# atualiza o repositório com a versão do servidor
+$ git pull
+```
 
 # Reset
 
@@ -151,7 +166,7 @@ $ git branch
 ```
 
 ```
-# criar uma branch e já entrar nela
+# cria e acessa uma branch
 $ git checkout -b nome_branch
 ```
 
@@ -186,14 +201,17 @@ Utilizado para definir quais arquivos NÃO serão enviados para o servidor.
 
 Criar um arquivo chamado **.gitignore**
 
-É possível definir quais os arquivos ou utilizar suas extenções:
+É possível definir quais os arquivos, conteúdos completos de pastas ou utilizar suas extenções:
 
 - arquivo.json
 - *.json
+- pastas/
 
 # Git stash
 
-Utilizado para "guardar" o state atual das modificações sem comitar, fica em status de WIP "Work In Progress"
+Utilizado para "guardar" (WD - Work Directory) o state atual das modificações sem comitar, fica em status de WIP "Work In Progress".
+
+Utilizado para quando for necessário trocar de branch sem precisar commitar o que estava sendo feito.
 
 ```
 # cria um estado atual
@@ -289,4 +307,13 @@ $ git fetch origin pull/numero_issue/head:nome_nova_branch
 ```
 
 ?? precisa clicar no github para aceitar um pull request???
+
+# Blame
+
+Utilizado para verificar em qual commit aquela linha foi alterada
+
+```
+# exibe o hash do commit que originou aquela linha
+$ git blame nome_arquivo
+```
 
